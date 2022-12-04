@@ -85,10 +85,11 @@ async setTodo(){
              ));
         return (
             <div>
-            <h1>To Do List </h1>
-            <h2>Add To Do</h2>
+            <h1><b>TODOLIST</b> </h1>
+            <form id="add-form">
             <input value={this.state.value} onChange={this.onChange} placeholder={"Enter New To Do"}/>
             <button onClick={() => {this.setTodo()}}>Add</button>
+            </form>
             <ul className='todo_wrapper'>
                     {mylist}
                 </ul>
